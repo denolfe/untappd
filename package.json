@@ -1,0 +1,20 @@
+{
+  "name": "untappd",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "author": "Elliot DeNolf <denolfe@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/denolfe/untappd"
+  }
+  "keywords": [
+    "untappd",
+    "beer"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "request": "^2.55.0"
+  }
+}
