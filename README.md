@@ -8,11 +8,11 @@ A third-party API for accessing Untappd data.
 
 ```
   {
-  total: 155,
-  unique: 120,
-  badges: 73,
-  friends: 17,
-  username: 'denolfe' 
+	  total: 155,
+	  unique: 120,
+	  badges: 73,
+	  friends: 17,
+    username: 'denolfe' 
   }
 ```
 
@@ -20,7 +20,7 @@ A third-party API for accessing Untappd data.
 
 ```
 { 
-    name: 'Graham Cracker Porter',
+  name: 'Graham Cracker Porter',
   brewery: 'Denver Beer Co',
   rating: 4.25,
   image: 'https://d1c8v1qci5en44.cloudfront.net/site/beer_logos/beer-GrahamCrackerPorter_71051.jpeg',
@@ -38,7 +38,7 @@ A third-party API for accessing Untappd data.
     firstVisit: '05/25/14',
     lastVisit: '12/30/14',
     checkins: 12 
-}]
+} ]
 ```
 
 * `fetchRecentBeers`
@@ -55,7 +55,7 @@ A third-party API for accessing Untappd data.
     checkins: 3,
     rating: 3.78,
     globalRating: 3.78 
-}]
+} ]
 ```
 
 * `fetchMostFrequentBeers`
