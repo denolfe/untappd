@@ -1,6 +1,6 @@
 {
   "name": "untappd",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "author": "Elliot DeNolf <denolfe@gmail.com>",
