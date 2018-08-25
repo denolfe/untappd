@@ -25,8 +25,8 @@
     "@types/request": "^2.47.1"
   },
   "files": [
-    "dist/index.js",
-    "dist/lib",
-    "dist/models"
+    "index.js",
+    "lib",
+    "models"
   ]
 }
