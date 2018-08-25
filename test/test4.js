@@ -1,4 +1,4 @@
-var untappd = require('../index.js');
+var untappd = require('../dist');
 var config = require('./config.json');
 
 untappd.fetchTopVenues(config.username, function (venues) {
