@@ -14,11 +14,11 @@ export const fetchLatestCheckin = (username, callback) => {
       if (error) throw error;
       const $ = cheerio.load(body);
 
-      const $beerInfo = $('.beer');
-      const beerName = $beerInfo.find('p > a').text();
-      const beerLink = `http://www.untappd.com${$beerInfo.find('p > a').attr('href')}`;
-      const beerBrewery = $beerInfo.find('span > a').text();
-      const breweryLink = `http://www.untappd.com${$beerInfo.find('span > a').attr('href')}`;
+      const beerInfo = $('.beer');
+      const beerName = beerInfo.find('p > a').text();
+      const beerLink = `http://www.untappd.com${beerInfo.find('p > a').attr('href')}`;
+      const beerBrewery = beerInfo.find('span > a').text();
+      const breweryLink = `http://www.untappd.com${beerInfo.find('span > a').attr('href')}`;
       const comment = $('p.comment').text();
       const rating = Number($('.rating').attr('class').split(' ')[2].match(/\d+/)) / 100;
       const time = $('p.time').text();

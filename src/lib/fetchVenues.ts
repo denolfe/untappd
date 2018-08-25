@@ -25,15 +25,15 @@ var fetchVenues = (username, sort, callback) => {
     const venueList = [];
 
     $('.venue-item').each((rank, item) => {
-      const $venue = $(item);
+      const venue = $(item);
 
-      const name = $venue.find('a[data-href=":view/name"]').text().trim();
-      const category = $venue.find('.category').text().trim().replace(/(\s|\t){2,}/g, ' ');
-      const address = $venue.find('.address').text().trim();
-      let firstVisit = $venue.find('.details > .date > a[data-href=":firstVisit"]').text().trim();
-      const lastVisit = $venue.find('.details > .date > a[data-href=":lastVisit"]').text().trim();
+      const name = venue.find('a[data-href=":view/name"]').text().trim();
+      const category = venue.find('.category').text().trim().replace(/(\s|\t){2,}/g, ' ');
+      const address = venue.find('.address').text().trim();
+      let firstVisit = venue.find('.details > .date > a[data-href=":firstVisit"]').text().trim();
+      const lastVisit = venue.find('.details > .date > a[data-href=":lastVisit"]').text().trim();
       if (firstVisit === '') firstVisit = lastVisit;
-      const checkins = Number($venue.find('.details > .check-ins').text().match(/\d+/)[0]);
+      const checkins = Number(venue.find('.details > .check-ins').text().match(/\d+/)[0]);
 
       venueList.push(new Venue(rank + 1, name, category, address, firstVisit, lastVisit, checkins));
 
